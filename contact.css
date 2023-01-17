@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+  background-color: rgb(46, 45, 46);
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px;
+}
+
+nav h2 {
+  margin-left: 33px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 33px;
+  padding: 13px;
+}
+
+nav a.active {
+  background-color: rgb(61, 60, 62);
+  color: coral;
+}
+
+nav a:hover {
+  background-color: rgb(61, 60, 62);
+  color: coral;
+}
+
+span {
+  color: coral;
+}
+
+form {
+  width: 100%;
+  padding: 100px;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  font-size: 1.1em;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+input {
+  padding: 9px;
+  margin: 11px 0px;
+}
+
+form p {
+  margin: 11px 0px 33px 0px;
+}
+
+form button {
+  background-color: rgb(46, 45, 46);
+  color: white;
+  padding: 11px;
+  font-size: 1.1em;
+  border: none;
+  margin-top: 33px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+}
+
+.section {
+  text-align: center;
+  width: 100%;
+  padding: 91px;
+  background-color: rgb(220, 220, 220);
+}
+
+i {
+  font-size: 3.3em;
+}
+
+footer {
+  background-color: rgb(61, 60, 62);
+  color: white;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 911px) {
+  .container {
+    flex-direction: column;
+  }
+}
